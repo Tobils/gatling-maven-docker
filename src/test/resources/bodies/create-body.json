@@ -1,0 +1,5 @@
+{
+    "name":"${name}",
+    "salary":"${salary}",
+    "age":"${age}"
+}
