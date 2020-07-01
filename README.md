@@ -4,13 +4,218 @@ Menjalankan gatling untuk loading test mengguanankan plugin maven yang dijalanka
 
 Base Url : http://dummy.restapiexample.com/api/v1
 
-| No   | Route   | Method   | Type   | Full Route   | Description| 
-|---|---|---|---|---|---|
-| 1   | /employee  | GET  | JSON   | http://dummy.restapiexample.com/api/v1/employees   | Get all employee data   |
-| 2  | /employee/{id}  | GET  | JSON   | http://dummy.restapiexample.com/api/v1/employee/1  | Get a single employee data  |
-| 3  | /create  | POST   | JSON  | http://dummy.restapiexample.com/api/v1/create  | Create new record in database  |
-| 4  | /update/{id}  | PUT  | JSON  | http://dummy.restapiexample.com/api/v1/update/21  | Update an employee record  |
-| 5  | /delete/{id}  | DELETE  | JSON  | http://dummy.restapiexample.com/api/v1/delete/2  | Delete an employee record  |
+- api details
+
+    | No   | Route   | Method   | Type   | Full Route   | Description| 
+    |---|---|---|---|---|---|
+    | 1   | /employee  | GET  | JSON   | http://dummy.restapiexample.com/api/v1/employees   | Get all employee data   |
+    | 2  | /employee/{id}  | GET  | JSON   | http://dummy.restapiexample.com/api/v1/employee/1  | Get a single employee data  |
+    | 3  | /create  | POST   | JSON  | http://dummy.restapiexample.com/api/v1/create  | Create new record in database  |
+    | 4  | /update/{id}  | PUT  | JSON  | http://dummy.restapiexample.com/api/v1/update/21  | Update an employee record  |
+    | 5  | /delete/{id}  | DELETE  | JSON  | http://dummy.restapiexample.com/api/v1/delete/2  | Delete an employee record  |
+
+- Response
+    1. get all data
+        ```json
+        {
+            "status": "success",
+            "data": [
+                {
+                "id": "1",
+                "employee_name": "Tiger Nixon",
+                "employee_salary": "320800",
+                "employee_age": "61",
+                "profile_image": ""
+                },
+                {
+                "id": "2",
+                "employee_name": "Garrett Winters",
+                "employee_salary": "170750",
+                "employee_age": "63",
+                "profile_image": ""
+                },
+                {
+                "id": "3",
+                "employee_name": "Ashton Cox",
+                "employee_salary": "86000",
+                "employee_age": "66",
+                "profile_image": ""
+                },
+                {
+                "id": "4",
+                "employee_name": "Cedric Kelly",
+                "employee_salary": "433060",
+                "employee_age": "22",
+                "profile_image": ""
+                },
+                {
+                "id": "5",
+                "employee_name": "Airi Satou",
+                "employee_salary": "162700",
+                "employee_age": "33",
+                "profile_image": ""
+                },
+                {
+                "id": "6",
+                "employee_name": "Brielle Williamson",
+                "employee_salary": "372000",
+                "employee_age": "61",
+                "profile_image": ""
+                },
+                {
+                "id": "7",
+                "employee_name": "Herrod Chandler",
+                "employee_salary": "137500",
+                "employee_age": "59",
+                "profile_image": ""
+                },
+                {
+                "id": "8",
+                "employee_name": "Rhona Davidson",
+                "employee_salary": "327900",
+                "employee_age": "55",
+                "profile_image": ""
+                },
+                {
+                "id": "9",
+                "employee_name": "Colleen Hurst",
+                "employee_salary": "205500",
+                "employee_age": "39",
+                "profile_image": ""
+                },
+                {
+                "id": "10",
+                "employee_name": "Sonya Frost",
+                "employee_salary": "103600",
+                "employee_age": "23",
+                "profile_image": ""
+                },
+                {
+                "id": "11",
+                "employee_name": "Jena Gaines",
+                "employee_salary": "90560",
+                "employee_age": "30",
+                "profile_image": ""
+                },
+                {
+                "id": "12",
+                "employee_name": "Quinn Flynn",
+                "employee_salary": "342000",
+                "employee_age": "22",
+                "profile_image": ""
+                },
+                {
+                "id": "13",
+                "employee_name": "Charde Marshall",
+                "employee_salary": "470600",
+                "employee_age": "36",
+                "profile_image": ""
+                },
+                {
+                "id": "14",
+                "employee_name": "Haley Kennedy",
+                "employee_salary": "313500",
+                "employee_age": "43",
+                "profile_image": ""
+                },
+                {
+                "id": "15",
+                "employee_name": "Tatyana Fitzpatrick",
+                "employee_salary": "385750",
+                "employee_age": "19",
+                "profile_image": ""
+                },
+                {
+                "id": "16",
+                "employee_name": "Michael Silva",
+                "employee_salary": "198500",
+                "employee_age": "66",
+                "profile_image": ""
+                },
+                {
+                "id": "17",
+                "employee_name": "Paul Byrd",
+                "employee_salary": "725000",
+                "employee_age": "64",
+                "profile_image": ""
+                },
+                {
+                "id": "18",
+                "employee_name": "Gloria Little",
+                "employee_salary": "237500",
+                "employee_age": "59",
+                "profile_image": ""
+                },
+                {
+                "id": "19",
+                "employee_name": "Bradley Greer",
+                "employee_salary": "132000",
+                "employee_age": "41",
+                "profile_image": ""
+                },
+                {
+                "id": "20",
+                "employee_name": "Dai Rios",
+                "employee_salary": "217500",
+                "employee_age": "35",
+                "profile_image": ""
+                },
+                {
+                "id": "21",
+                "employee_name": "Jenette Caldwell",
+                "employee_salary": "345000",
+                "employee_age": "30",
+                "profile_image": ""
+                },
+                {
+                "id": "22",
+                "employee_name": "Yuri Berry",
+                "employee_salary": "675000",
+                "employee_age": "40",
+                "profile_image": ""
+                },
+                {
+                "id": "23",
+                "employee_name": "Caesar Vance",
+                "employee_salary": "106450",
+                "employee_age": "21",
+                "profile_image": ""
+                },
+                {
+                "id": "24",
+                "employee_name": "Doris Wilder",
+                "employee_salary": "85600",
+                "employee_age": "23",
+                "profile_image": ""
+                }
+            ]
+        }
+        ```
+    2. create data
+        ```json
+        {
+            "status": "success",
+            "data": {
+                "name": "ade",
+                "salary": " 124",
+                "age": " 23",
+                "id": 51
+            }
+        }
+        ```
+    3. get data by id
+        ```json
+        {
+            "status": "success",
+            "data": {
+                "id": "1",
+                "employee_name": "Tiger Nixon",
+                "employee_salary": "320800",
+                "employee_age": "61",
+                "profile_image": ""
+            }
+        }
+        ```
 
 
 ## 1. GATLING-HTTP2
@@ -249,7 +454,7 @@ Loading test menggunakan gatling dapat dilakukan dengan merujuk ke project examp
 
 
 ## KESIMPULAN
-Dockerisasi project gatling maven akan memudahkan kita ketika menjalankan load test, terutama jika test dilakukan di server vps. Hasil Test Gatling disimpan pada directory target dan di bundle dalam bentuk halaman web, sehingga memudahkan kita dalam menganalisa hasil test lebih lanjut. Untuk Detail mengenai dokumentasi pada gatling, teman-teman bisa merujuk pada tautan refrensi di bawah ini.
+Dockerisasi project gatling maven akan memudahkan kita ketika menjalankan load test, terutama jika test dilakukan di server vps. Hasil Test Gatling disimpan pada directory target dan di bundle dalam bentuk halaman web, sehingga memudahkan kita dalam menganalisa hasil test lebih lanjut. Untuk Detail mengenai dokumentasi pada gatling, teman-teman bisa merujuk pada tautan refrensi di bawah ini. oiyah dependecny pada maven menggunakan scala versi 2.12
 
 
 ## REFERENSI
@@ -257,6 +462,8 @@ Dockerisasi project gatling maven akan memudahkan kita ketika menjalankan load t
 - [gatling - maven plugin demo - github](https://github.com/gatling/gatling-maven-plugin-demo)
 - [gatling - advanced tutorial](https://gatling.io/docs/current/advanced_tutorial/)
 - [dummy rest-api](http://dummy.restapiexample.com/)
+- [gatling - scala version issue](https://github.com/scala/bug/issues/11648)
+- [error - heap memory](https://stackoverflow.com/questions/59392180/karate-gatling-how-to-resolve-java-heap-space-outofmemoryerror)
 
 
 
