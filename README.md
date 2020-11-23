@@ -1,5 +1,9 @@
 # GATLING + MAVEN + DOCKER
 
+
+- create project : `mvn archetype:generate -DarchetypeGroupId=io.gatling.highcharts -DarchetypeArtifactId=gatling-highcharts-maven-archetype`
+- isi sesuai data groupId, artifactId, version, dan package
+    
 Menjalankan gatling untuk loading test mengguanankan plugin maven yang dijalankan di atas docker. kita kan menggunakan dummy rest api example sebagai target load test kita. public api yang akan kita test ditampilkan pada table dibawah ini. 
 
 Base Url : http://dummy.restapiexample.com/api/v1
